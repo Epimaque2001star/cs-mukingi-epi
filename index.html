@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CS-M-U-K-I-N-G-I School (EPI)</title>
+  <style>
+    :root {
+      --blue: #007bff;
+      --yellow: #ffc107;
+      --green: #28a745;
+      --bg-light: #f4f4f4;
+      --text-dark: #333;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+    }
+
+    header {
+      background: var(--blue);
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .marquee {
+      background-color: white;
+      font-weight: bold;
+      padding: 0.5rem;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .marquee-text {
+      display: inline-block;
+      font-size: 1.5rem;
+      animation: scroll 20s linear infinite;
+    }
+
+    .marquee-red {
+      color: red;
+    }
+
+    .marquee-blue {
+      color: var(--blue);
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    nav {
+      display: flex;
+      background: var(--yellow);
+      justify-content: space-around;
+      padding: 0.5rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: bold;
+    }
+
+    main {
+      padding: 1rem;
+    }
+
+    .section {
+      background: white;
+      border-left: 6px solid var(--green);
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      background: var(--blue);
+      color: white;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CS-M-U-K-I-N-G-I School (EPI)</h1>
+  </header>
+
+  <div class="marquee">
+    <div class="marquee-text marquee-red">WELCOME TO CS MUKINGI PRIMARY SCHOOL SERVICES PORTAL</div>
+  </div>
+
+  <div class="marquee">
+    <div class="marquee-text marquee-blue">FOR HELP TOLL FREE 0794673946</div>
+  </div>
+
+  <nav>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#login">Login</a>
+    <a href="#register">Register</a>
+  </nav>
+
+  <main>
+    <section class="section" id="dashboard">
+      <h2>E-P-I-M-A-Q-U-E Dashboard</h2>
+      <p>Overview of school management.</p>
+    </section>
+
+    <section class="section">
+      <h3>Head Teacher Area</h3>
+      <p>Manage school reports, policies, and oversight tools.</p>
+    </section>
+
+    <section class="section">
+      <h3>Staff Area</h3>
+      <p>Upload grades, manage classes, view schedules.</p>
+    </section>
+
+    <section class="section">
+      <h3>Student Area</h3>
+      <p>View results, assignments, announcements, and chat.</p>
+    </section>
+
+    <section class="section">
+      <h3>Visitor Area</h3>
+      <p>Learn about the school, make inquiries, and tour online.</p>
+    </section>
+
+    <section class="section">
+      <h3>Suggestion Box</h3>
+      <textarea rows="4" cols="50" placeholder="Enter your suggestion..."></textarea>
+      <br /><button>Submit Suggestion</button>
+    </section>
+
+    <section class="section">
+      <h3>Chat Area</h3>
+      <p>Chat coming soon. (To be implemented with backend)</p>
+    </section>
+
+    <section class="section" id="login">
+      <h3>Login</h3>
+      <form>
+        <input type="text" placeholder="Username" required /><br />
+        <input type="password" placeholder="Password" required /><br />
+        <button type="submit">Login</button>
+      </form>
+    </section>
+
+    <section class="section" id="register">
+      <h3>Register</h3>
+      <form>
+        <input type="text" placeholder="Full Name" required /><br />
+        <input type="email" placeholder="Email" required /><br />
+        <input type="password" placeholder="Password" required /><br />
+        <button type="submit">Register</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CS-M-U-K-I-N-G-I School (EPI)</p>
+  </footer>
+</body>
+</html>
